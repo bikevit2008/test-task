@@ -1,0 +1,79 @@
+html, body{
+    height: 100%;
+}
+.pointer{
+    cursor: pointer;
+}
+#root{
+    background-image: url("../images/фон.png");
+    min-height: 100%;
+}
+.main{
+    width: 650px;
+}
+.game{
+    width: 296px;
+    min-height: 409px;
+}
+.opacity0{
+    z-index: 0;
+    opacity:0;
+}
+.transition-opacity{
+    transition: .161s ease-out;
+}
+.opacity1{
+    z-index: 1;
+    opacity:1;
+}
+.popup-wrapper{
+    top: 0;
+    z-index: 0;
+    opacity: 0;
+}
+.popup{
+    background-image: url("../images/фон-попапа.png");
+    border-radius: 9px;
+    border-color: #000;
+    border-width: 4px;
+}
+.popup-open {
+    animation: popup-open 0.5s ease-out alternate;
+    animation-fill-mode: forwards;
+}
+.popup-close {
+    animation: popup-close 0.5s ease-out alternate;
+    animation-fill-mode: forwards;
+}
+
+@keyframes popup-open {
+    from { z-index: 0; transform: scale(0.1); opacity: 0;}
+    to { z-index: 2; transform: scale(1); opacity: 1;}
+}
+
+@keyframes popup-close {
+    from { z-index: 2; transform: scale(1); opacity: 1 }
+    to { z-index: 0; transform: scale(0); opacity: 0 }
+}
+.font12 {
+    font-size: 12px;
+}
+.font14 {
+    font-size: 14px;
+}
+.font15 {
+    font-size: 15px;
+}
+.serif{
+    font-family: PFRegal,Georgia,serif;
+}
+.start-btn{
+    background: #b88b58;
+    color: white;
+}
+.start{
+    background: #f5f5f5;
+}
+.inline-block{
+    display: inline-block;
+}
