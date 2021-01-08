@@ -1,3 +1,3 @@
 # Test task for Meduza.io
 
-Production build on the http://memori.ml/
+Production build on the https://bikevit2008.github.io/test-task/
